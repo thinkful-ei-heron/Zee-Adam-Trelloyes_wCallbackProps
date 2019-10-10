@@ -62,6 +62,7 @@ class App extends Component {
           {store.lists.map(list => (
             <List
               key={list.id}
+              id={list.id}
               header={list.header}
               cards={list.cardIds.map(id => store.allCards[id])}
               onDeleteItem={this.handleDeleteButton}
